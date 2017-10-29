@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_alignParentStart="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:elevation="4dp"
+        android:foreground="@drawable/shape2"
+        android:src="@drawable/back"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:layout_height="120dp"
+        android:elevation="5dp"
+        android:src="@drawable/pic1"
+        android:visibility="visible"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+
+        android:id="@+id/pic"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="NISHANT"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+
+        android:textSize="35sp"
+        android:visibility="visible"
+        android:elevation="5dp"
+        android:layout_marginTop="60dp"
+android:layout_marginBottom="-8dp"
+        android:layout_toRightOf="@+id/pic"
+
+        android:textColor="#ffffff"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpPager"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme1"
+        android:orientation="vertical"
+android:layout_marginTop="120dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+
+            android:paddingLeft="135dp"
+            android:elevation="5dp"/>
+
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+</RelativeLayout>
